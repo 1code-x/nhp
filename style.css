@@ -312,13 +312,13 @@ body.dark-theme .navbar.scrolled .theme-toggle:hover {
 .hamburger div {
     width: 25px;
     height: 1px;
-    background-color: #fff;
+    background-color: #000;
     margin: 5px 0;
     transition: var(--transition);
 }
 
 .navbar.scrolled .hamburger div {
-    background-color: var(--color-text);
+    background-color: #000;
 }
 
 /* Hero */
@@ -826,9 +826,9 @@ footer {
         font-size: 1.5rem;
     }
 
-    .hamburger.toggle .line1 { transform: rotate(-45deg) translate(-5px, 6px); background-color: var(--color-text); }
+    .hamburger.toggle .line1 { transform: rotate(-45deg) translate(-5px, 6px); background-color: #000; }
     .hamburger.toggle .line2 { opacity: 0; }
-    .hamburger.toggle .line3 { transform: rotate(45deg) translate(-5px, -6px); background-color: var(--color-text); }
+    .hamburger.toggle .line3 { transform: rotate(45deg) translate(-5px, -6px); background-color: #000; }
 
     .hero h1 { font-size: 3rem; }
 }
