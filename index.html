@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NHP | Architecture & Design</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loading-overlay" class="loading-overlay">
+        <div class="loader-line"></div>
+        <p class="loader-text">CRAFTING SPACES...</p>
+    </div>
+
+    <!-- Hidden image for color palette extraction -->
+    <img src="x.jpeg" id="source-image" alt="Hidden Palette Source" crossorigin="anonymous" style="display: none;">
+
+    <nav id="navbar" class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo" style="display: flex; align-items: center;"><img src="assets/nhp_logo.png" alt="NHP Logo" style="height: 80px; width: auto; object-fit: contain; transform: scale(1.8); transform-origin: left center; position: relative; z-index: 1050;"></a>
+            <ul class="nav-links">
+                <li><a href="#about">Studio</a></li>
+                <li><a href="#projects">Selected Works</a></li>
+                <li><a href="#services">Expertise</a></li>
+                <li><a href="#contact">Inquire</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="hero-image-wrapper">
+            <img src="assets/Gemini_Generated_Image_f6vtcvf6vtcvf6vt.png" alt="Modern Minimalist House" class="hero-img">
+        </div>
+        <div class="container hero-content">
+            <h1 class="reveal-text"><span>Designing</span><br><span>The Future</span></h1>
+            <p class="reveal-text delay-1"><span>Where structural precision meets timeless elegance. We craft architectural masterpieces that redefine modern living.</span></p>
+            <div class="reveal-text delay-2">
+                <a href="#projects" class="btn btn-outline">Discover Our Work</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <p>Scroll to explore</p>
+            <div class="scroll-line"></div>
+        </div>
+    </header>
+
+    <section id="about" class="section about">
+        <div class="container fade-in">
+            <div class="about-grid">
+                <div class="about-img-wrapper fade-in-left">
+                    <img src="assets/about_img.png" alt="Architectural Model">
+                    <div class="floating-box">
+                        <span class="float-num">20+</span>
+                        <span class="float-text">Years of<br>Mastery</span>
+                    </div>
+                </div>
+                <div class="about-text fade-in-right">
+                    <span class="section-subtitle">THE STUDIO</span>
+                    <h2>A Philosophy of <br><em>Spatial Harmony</em></h2>
+                    <p class="lead">We are an avant-garde architectural firm dedicated to shaping environments that inspire, endure, and elevate the human experience.</p>
+                    <p>By blending sustainable practices with striking, modern aesthetics, our team designs customized homes and commercial spaces that exist in perfect synergy with their surroundings. Every line drawn is deliberate. Every material chosen is purposeful.</p>
+                    <a href="#contact" class="link-forward">Meet the Architects →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section services bg-toned">
+        <div class="container fade-in">
+            <div class="services-header text-center fade-in-up">
+                <span class="section-subtitle">OUR EXPERTISE</span>
+                <h2>Architectural Disciplines</h2>
+            </div>
+            <div class="services-track flex-container">
+                <div class="service-block fade-in-up delay-1">
+                    <div class="service-number">01</div>
+                    <h3>House Planning</h3>
+                    <p>Meticulous spatial flow and layout optimization that completely transforms how you experience your home.</p>
+                    <div class="image-wrap" style="margin-top: 1.5rem;">
+                        <img src="assets/architect-drawing-plans-stockcake.webp" alt="House Planning">
+                    </div>
+                </div>
+                <div class="service-block fade-in-up delay-2">
+                    <div class="service-number">02</div>
+                    <h3>3D Visualization</h3>
+                    <p>Photorealistic renderings and immersive VR walkthroughs ensuring perfect alignment with your vision.</p>
+                    <div class="image-wrap" style="margin-top: 1.5rem;">
+                        <img src="assets/3d_visualization.jpg" alt="3D Visualization">
+                    </div>
+                </div>
+                <div class="service-block fade-in-up delay-3">
+                    <div class="service-number">03</div>
+                    <h3>Architectural Design</h3>
+                    <p>From conceptual sketches to engineering blueprints, creating iconic silhouettes that define the skyline.</p>
+                    <div class="image-wrap" style="margin-top: 1.5rem;">
+                        <img src="assets/modern-architecture-concept-with-3d-house-rendering-over-blueprints-photo.jpg" alt="Architectural Design">
+                    </div>
+                </div>
+                <div class="service-block fade-in-up delay-4">
+                    <div class="service-number">04</div>
+                    <h3>Renovations</h3>
+                    <p>Breathing new, modern life into existing structures while respecting their foundational heritage.</p>
+                    <div class="image-wrap" style="margin-top: 1.5rem;">
+                        <img src="assets/Gemini_Generated_Image_dnyt7dnyt7dnyt7d.png" alt="Renovations">
+                    </div>
+                </div>
+                <div class="service-block fade-in-up delay-5" style="margin-left: 2rem;">
+                    <div class="service-number">05</div>
+                    <h3>Scope of Work</h3>
+                    <ul style="list-style-type: disc; padding-left: 1.2rem; color: var(--color-text-light); line-height: 1.8; font-weight: 300; column-count: 2; column-gap: 2rem; margin-bottom: 0;">
+                        <li>New House</li>
+                        <li>Additions</li>
+                        <li>Out Rooms</li>
+                        <li>Lapas</li>
+                        <li>Swimming pools</li>
+                        <li>Screen Walls</li>
+                        <li>Office Blocks</li>
+                        <li>Clinics</li>
+                        <li>Schools</li>
+                        <li>Creches</li>
+                        <li>Churches</li>
+                        <li>Double Storeys</li>
+                        <li>Taxi Ranks</li>
+                        <li>Halls</li>
+                        <li>Taverns</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section projects">
+        <div class="container">
+            <div class="projects-header flex-between fade-in">
+                <div>
+                    <span class="section-subtitle">SELECTED WORKS</span>
+                    <h2>Featured Portfolio</h2>
+                </div>
+                <a href="#" class="btn btn-outline desktop-only">View All Projects</a>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="port-item large fade-in">
+                    <div class="image-wrap">
+                        <img src="assets/Gemini_Generated_Image_a1z4p3a1z4p3a1z4.png" alt="House Planning Blueprints">
+                    </div>
+                    <div class="port-info">
+                        <h3>Design & Drafting</h3>
+                        <span>Residential / Minimalist</span>
+                    </div>
+                </div>
+                <div class="port-item fade-in delay-1">
+                    <div class="image-wrap">
+                        <img src="assets/Arch2O-architectural-sketching-10-architecture-sketching-tips.webp" alt="House Planning 3D Model">
+                    </div>
+                    <div class="port-info">
+                        <h3>Structural Engineering</h3>
+                        <span>Blueprint / Visualization</span>
+                    </div>
+                </div>
+                <div class="port-item fade-in delay-1">
+                    <div class="image-wrap">
+                        <img src="assets/afroamerican-architect-working-office-blueprintsengineer-600nw-1812323140.webp" alt="Architect at Work">
+                    </div>
+                    <div class="port-info">
+                        <h3>Expert Consultation</h3>
+                        <span>Team / Leadership</span>
+                    </div>
+                </div>
+                <div class="port-item large fade-in">
+                    <div class="image-wrap">
+                        <img src="assets/portfolio_4.png" alt="Interior View">
+                    </div>
+                    <div class="port-info">
+                        <h3>Concrete Canopy</h3>
+                        <span>Interior / Brutalism</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mobile-only" style="margin-top: 3rem;">
+                <a href="#" class="btn btn-outline">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-us" class="section why-us bg-toned">
+        <div class="container flex-container">
+            <div class="why-list-wrapper fade-in-left">
+                <h2>The NHP Standard</h2>
+                <ul class="clean-list">
+                    <li>
+                        <h4>Uncompromising Quality</h4>
+                        <p>We source only the finest materials and employ top-tier structural engineers.</p>
+                    </li>
+                    <li>
+                        <h4>Sustainable Innovation</h4>
+                        <p>Integrating green technology to seamlessly minimize ecological footprints.</p>
+                    </li>
+                    <li>
+                        <h4>Client-Centric Process</h4>
+                        <p>Total transparency and collaborative ideation from day one until the ribbon cutting.</p>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="testimonial-wrapper fade-in-right">
+                <div class="testimonial-card">
+                    <div class="quote-mark">"</div>
+                    <p class="quote">Working with NHP was a revelation. They didn't just design a house; they sculptured a home that perfectly mirrors our lifestyle. Their attention to nuanced, modern aesthetics is simply unmatched.</p>
+                    <div class="author-area">
+                        <strong>Client Name</strong>
+                        <span>Private Client</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <div class="container flex-container flex-between align-start fade-in">
+            <div class="contact-info">
+                <span class="section-subtitle">INQUIRE</span>
+                <h2>Start a Conversation.</h2>
+                <p class="contact-desc">We take on a limited number of commissions each year to ensure the highest level of dedication. Tell us about your vision.</p>
+                
+                <div class="info-group">
+                    <strong>Studio</strong>
+                    <p>123 Sebokeng Moshoeshoe Rd</p>
+                </div>
+                <div class="info-group">
+                    <strong>Contact</strong>
+                    <p>mohlolon92@gmail.com<br>+27 (83) 239 4301<br>+27 (83) 623 5866</p>
+                </div>
+            </div>
+            
+            <div class="form-wrapper">
+                <form class="clean-form">
+                    <div class="input-row">
+                        <input type="text" placeholder="Full Name" required>
+                    </div>
+                    <div class="input-row">
+                        <input type="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="input-row">
+                        <input type="text" placeholder="Project Type / Location" required>
+                    </div>
+                    <div class="input-row">
+                        <textarea rows="4" placeholder="Tell us about your project..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-solid">Submit Inquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-inner">
+            <div class="footer-top flex-between">
+                <a href="#" class="logo" style="display: flex; align-items: center;"><img src="assets/nhp_logo.png" alt="NHP Logo" style="height: 160px; width: auto; object-fit: contain;"></a>
+                <div class="social-links">
+                    <a href="#">Instagram</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">ArchDaily</a>
+                </div>
+            </div>
+            <div class="footer-bottom flex-between">
+                <p>&copy; <span id="year"></span> NHP Architecture. All Rights Reserved.</p>
+                <div class="legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ColorThief -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
+    <!-- Custom Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
